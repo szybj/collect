@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用css画出一个大于号></title>
+<style>
+*{
+  padding:0;
+  margin:0;
+}
+.wrap{
+  margin:30px;
+}
+.top,.bottom{
+  width:2px;
+  height:30px;
+  background-color:#666;
+}
+.top{
+  transform:skewX(25deg);
+}
+.bottom{
+  transform:skewX(-25deg);
+}
+</style>
+</head>
+ 
+<body>
+<div class="wrap">
+    <div class="top">
+    </div>
+    <div class="bottom">
+    </div>
+</div>
+</body>
+</html>

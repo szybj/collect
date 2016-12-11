@@ -1,0 +1,31 @@
+﻿var url = "http://www.taobao.com/index.php?key0=0&key1=1&key2=2";
+
+var obj = parseQueryString(url);
+
+alert("obj.key0:      "+obj.key0);
+
+alert("obj.key1:      "+obj.key1);
+
+alert("obj.key2:      "+obj.key2);
+
+       
+function parseQueryString(argu){
+
+ 
+         var str = argu.split('?')[1];
+
+          var result = {};
+        
+  var temp = str.split('&');
+        
+  for(var i=0; i<temp.length; i++)
+  
+         {
+     var temp2 = temp[i].split('=');
+
+               result[temp2[0]] = temp2[1];
+        
+  }
+  return result;
+
+       }

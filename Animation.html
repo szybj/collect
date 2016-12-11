@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+</head>
+<style type="text/css">
+	.spinner{
+		width: 40px;
+		height: 40px;
+		background-color: green;
+		border-radius: 100%;
+		margin: 100px auto;
+		-webkit-animation: fadeOut 1.0s infinite ease-in-out;
+		-o-animation: fadeOut 1.0s infinite ease-in-out;
+		animation: fadeOut 1.0s infinite ease-in-out;
+	}
+	-@-webkit-keyframes fadeOut{
+		from{-webkit-transform:scale(0.0);}
+		to{-webkit-transform:scale(1.0);opacity: 0;}
+	}
+	@keyframes fadeOut{
+		from{-webkit-transform:scale(0.0);}
+		to{-webkit-transform:scale(1.0);opacity: 0;}
+	}
+</style>
+<body>
+	<div class="spinner"></div>
+</body>
+</html>
